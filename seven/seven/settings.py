@@ -83,17 +83,19 @@ USE_TZ = True
 
 TEMPLATE_DIRS = (
         #'/home/user/udemy/static/templates/',
-        os.path.join(os.path.dirname(BASE_DIR), "static","templates"),
+        os.path.join(os.path.dirname(BASE_DIR), "seven","templates"),
         )
+
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static","media")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "seven","media")
 #'/home/user/udemy/static/media/',
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static","root")
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "seven","root")
 #'/home/user/udemy/static/root/',
 
 STATICFILES_DIRS =(
-     os.path.join(os.path.dirname(BASE_DIR), "static","static"),
+     os.path.join(os.path.dirname(BASE_DIR), "seven","static"),
 #'/home/user/udemy/static/static/',
 
 )
