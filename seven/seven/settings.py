@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+#\home/user/udemy/seven
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'profiles',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -80,4 +81,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
+TEMPLATE_DIRS = (
+        #'/home/user/udemy/static/templates/',
+        os.path.join(os.path.dirname(BASE_DIR), "static","templates"),
+        )
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static","media")
+#'/home/user/udemy/static/media/',
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static","root")
+#'/home/user/udemy/static/root/',
+
+STATICFILES_DIRS =(
+     os.path.join(os.path.dirname(BASE_DIR), "static","static"),
+#'/home/user/udemy/static/static/',
+
+)
