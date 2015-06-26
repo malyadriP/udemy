@@ -1,0 +1,46 @@
+=========== Linux commands 
+pwd   # present working directory 
+ls    # list 
+cd    #change directory 
+cp  -R  # copy folder 
+cp      #copy file
+
+===========  Eclipse shortcuts 
+shift + ctrl + R      #Search for the files 
+alt + <-   # Back file where working    
+alt + ->   #Foreard file where working 
+
+select something and 1) ctrl + k (find next) 2) ctrl + shift +k (find back)
+ctrl + left click   ## Go to method definition or file 
+ctrl + H => find in file system 
+
+
+
+
+==========   git commands 
+git status 
+git diff 
+git diff filename
+git log
+git add file1 file2 file3 
+git add . 
+git add --all folder 
+git commit -m "Message for particular commit"
+git checkout filename 
+git checkout branchname 
+git push origin master 
+git push origin brancchname 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
